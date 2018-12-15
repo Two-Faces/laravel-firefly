@@ -2,14 +2,25 @@
 
 @section('content')
 <div class="container">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1 class="mb-0">{{ __('Groups') }}</h1>
+    <div class="page-info">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column">
+                <h1 class="mb-0">{{ __('Groups') }}</h1>
 
-        @if (Auth::check() && Auth::user()->can('create', Firefly\Group::class))
-            <a href="{{ route('firefly.group.create') }}" class="btn btn-sm btn-primary">
-                {{ __('New Group') }}
-            </a>
-        @endif
+                <div aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">Home</li>
+                        <li class="breadcrumb-item active" aria-current="page">All Groups</li>
+                    </ol>
+                </div>
+            </div>
+
+            @if (Auth::check() && Auth::user()->can('create', Firefly\Group::class))
+                <a href="{{ route('firefly.group.create') }}" class="btn btn-primary">
+                    {{ __('New Group') }}
+                </a>
+            @endif
+        </div>
     </div>
 
     <div class="row">
@@ -18,7 +29,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="alert alert-yellow mb-0" role="alert">
-                            <strong>{{ __('Holy guacamole!') }}</strong><br>
+                            <strong>{{ __('Holy guacamole') }}</strong><br>
                             {{ __('There are no groups; You could be the first to create one.') }}
                         </div>
                     </div>

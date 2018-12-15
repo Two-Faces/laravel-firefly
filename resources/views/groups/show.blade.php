@@ -47,8 +47,8 @@
         <div class="card">
             <div class="card-body">
                 <div class="alert alert-yellow mb-0" role="alert">
-                    <strong>{{ __('Holy guacamole!') }}</strong><br>
-                    {{ __('There are no discussions; You could be the first to create one.') }}
+                    <div class="alert-title">{{ __('Holy guacamole') }}</div>
+                    <p>{{ __('There are no discussions; You could be the first to create one.') }}</p>
                 </div>
             </div>
         </div>

@@ -1,4 +1,16 @@
 .alert {
-    font-size: .85em;
-    padding: .5rem .75rem;
+    padding: 20px 30px;
+    font-size: .875rem;
+    line-height: 1.375rem;
+    border: 0;
+}
+
+.alert-title {
+    text-transform: uppercase;
+    opacity: .6;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: .75rem;
+    line-height: 1.175rem;
+    margin-bottom: 3px;
 }
