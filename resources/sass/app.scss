@@ -51,19 +51,22 @@ a {
 
 main {
     margin: 30px auto;
+}
+
+.page-info {
+    margin-bottom: 30px;
 
     h1 {
         font-weight: 400;
         font-size: 1.625rem;
         line-height: 2.375rem;
-        margin-bottom: 30px;
     }
-}
 
-.breadcrumb {
-    font-weight: 400;
-    font-size: .875rem;
-    line-height: 1.375rem;
+    .breadcrumb {
+        font-weight: 400;
+        font-size: .875rem;
+        line-height: 1.375rem;
+    }
 }
 
 .list-group-item {

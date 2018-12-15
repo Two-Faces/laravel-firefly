@@ -2,9 +2,23 @@
     margin-bottom: 1rem;
 
     > label {
-        margin-bottom: 3px;
         display: block;
-        font-weight: 600;
+        font-weight: 900;
+        font-size: .75rem;
+        line-height: 1.175rem;
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+        color: $licorice;
+        text-transform: uppercase;
+    }
+
+    .custom-control-label {
+        display: block;
+        font-weight: 400;
+        font-size: .875rem;
+        line-height: 1.475rem;
+        margin-bottom: 0;
+        color: $licorice;
     }
 }
 

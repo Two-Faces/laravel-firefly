@@ -2,28 +2,28 @@
 
 @section('content')
 <div class="container">
-    <div class="page-info">
-        <div class="d-flex justify-content-between align-items-center">
-            <div class="d-flex flex-column">
-                <h1 class="mb-0">{{ __('Groups') }}</h1>
-
+    <div class="row">
+        <div class="col-12">
+            <div class="page-info">
                 <div aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">Home</li>
                         <li class="breadcrumb-item active" aria-current="page">All Groups</li>
                     </ol>
                 </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1 class="mb-0">{{ __('Groups') }}</h1>
+
+                    @if (Auth::check() && Auth::user()->can('create', Firefly\Group::class))
+                        <a href="{{ route('firefly.group.create') }}" class="btn btn-sm btn-primary">
+                            {{ __('New Group') }}
+                        </a>
+                    @endif
+                </div>
             </div>
-
-            @if (Auth::check() && Auth::user()->can('create', Firefly\Group::class))
-                <a href="{{ route('firefly.group.create') }}" class="btn btn-primary">
-                    {{ __('New Group') }}
-                </a>
-            @endif
         </div>
-    </div>
 
-    <div class="row">
         @if (! count($groups))
             <div class="col">
                 <div class="card">

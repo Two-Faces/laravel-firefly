@@ -4,17 +4,19 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <div aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">Home</li>
-                    <li class="breadcrumb-item active" aria-current="page">All Discussions</li>
-                </ol>
+            <div class="page-info">
+                <div aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">Home</li>
+                        <li class="breadcrumb-item active" aria-current="page">All Discussions</li>
+                    </ol>
+                </div>
+                
+                <h1 class="mb-0">{{ __('Discussions') }}</h1>
             </div>
         </div>
 
         <div class="col-lg-8">
-            <h1 class="mb-0">{{ __('Discussions') }}</h1>
-
             @if (! count($discussions))
                 <div class="card">
                     <div class="card-body">

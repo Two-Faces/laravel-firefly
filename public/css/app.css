@@ -2841,7 +2841,7 @@ textarea.form-control {
   padding: 0.75rem 1.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 30px;
+  border-radius: 5px;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3881,7 +3881,7 @@ fieldset:disabled a.btn {
   padding: 0.35rem 1.25rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 30px;
+  border-radius: 5px;
 }
 
 .btn-block {
@@ -11178,9 +11178,23 @@ a.text-yellow:focus {
 }
 
 .form-group > label {
-  margin-bottom: 3px;
   display: block;
-  font-weight: 600;
+  font-weight: 900;
+  font-size: .75rem;
+  line-height: 1.175rem;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  color: #121212;
+  text-transform: uppercase;
+}
+
+.form-group .custom-control-label {
+  display: block;
+  font-weight: 400;
+  font-size: .875rem;
+  line-height: 1.475rem;
+  margin-bottom: 0;
+  color: #121212;
 }
 
 .form-control {
@@ -11414,14 +11428,17 @@ main {
   margin: 30px auto;
 }
 
-main h1 {
-  font-weight: 400;
-  font-size: 1.625rem;
-  line-height: 2.375rem;
+.page-info {
   margin-bottom: 30px;
 }
 
-.breadcrumb {
+.page-info h1 {
+  font-weight: 400;
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+}
+
+.page-info .breadcrumb {
   font-weight: 400;
   font-size: .875rem;
   line-height: 1.375rem;

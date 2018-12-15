@@ -10,7 +10,7 @@
                 @csrf
                 
                 <div class="form-group">
-                    <label for="title">{{ __('Name') }}</label>
+                    <label for="name">{{ __('Name') }}</label>
                     <input type="text" name="name" id="name" value="{{ old('name') }}" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" required autofocus>
 
                     @if ($errors->has('name'))
