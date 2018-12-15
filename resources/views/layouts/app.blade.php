@@ -20,9 +20,8 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light py-4">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <svg width="32" height="32" transform="rotate(45)" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle stroke="#121212" stroke-width="3" cx="16" cy="16" r="14.5"/><path d="M14.554 11.033l6.79 4.514a1 1 0 0 1 .002 1.664l-6.79 4.541A1 1 0 0 1 13 20.921v-9.055a1 1 0 0 1 1.554-.833z" fill="#121212"/></g></svg>
-                </a>
+                <a class="navbar-brand" href="{{ url('/') }}">{{ config('app.name', 'Firefly') }}</a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -54,7 +53,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    Hello, {{ Auth::user()->name }} <span class="caret"></span>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -73,7 +72,7 @@
             </div>
         </nav>
 
-        <main class="pt-4 pb-5">
+        <main>
             @yield('content')
         </main>
     </div>

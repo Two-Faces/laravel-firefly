@@ -15,7 +15,8 @@ mix.js([
   'resources/js/app.js'
 ], 'public/js')
 .sass('resources/sass/app.scss', 'public/css')
-.setPublicPath('public');
+.setPublicPath('public')
+.disableNotifications();
 
 // Full API
 // mix.js(src, output);

@@ -4,6 +4,7 @@ namespace Firefly;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class FireflyServiceProvider extends ServiceProvider
@@ -60,6 +61,10 @@ class FireflyServiceProvider extends ServiceProvider
      */
     protected function loadViews()
     {
+        View::composer('groups', function ($view) {
+            $view->with('groups', \Firefly\Group::all());
+        });
+
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'firefly');
     }
 

@@ -26,10 +26,11 @@
 }
 
 .group-display {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     border: 3px solid #fff;
     background: $licorice;
+    border-radius: 100%;
 
     &:not(:first-of-type) {
         margin-left: -12px;
@@ -37,6 +38,11 @@
 
     &:hover {
         z-index: 10;
+    }
+
+    &-small {
+        width: 30px;
+        height: 30px;
     }
 
     &-clear {

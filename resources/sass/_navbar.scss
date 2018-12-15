@@ -6,16 +6,27 @@
 .navbar-light {
     .navbar-brand {
         padding: 0;
+        color: #3E3F42;
+        font-size: .875rem;
+        color: #3E3F42;
+        line-height: 1.375rem;
+    }
+
+    .navbar-toggler {
+        border: 0;
     }
 
     .navbar-nav {
         .nav-link {
-            padding: 0 15px;
-            font-weight: 700;
             color: rgba($licorice, .5);
+
+            @include media-breakpoint-up(md) {
+                padding: 0 15px;
+            }
 
             &:hover,
             &.active {
+                font-weight: 400;
                 color: $licorice;
             }
         }

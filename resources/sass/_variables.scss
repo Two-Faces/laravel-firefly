@@ -20,7 +20,7 @@ $pink: #D36582;
 $secondary: #fff;
 
 $body-bg: #FBFBFD;
-$body-color: $licorice;
+$body-color: #9EA0A5;
 
 $font-family-sans-serif: 'Roboto', sans-serif;
 
@@ -35,7 +35,7 @@ $link-color: $licorice;
 $link-hover-color: lighten($link-color, 30%);
 $link-hover-decoration: none;
 
-$border-radius: 5px;
+$border-radius: 4px;
 
 $input-border-color: lighten($gray, 20%);
 $input-btn-focus-box-shadow:  0 0 0 .2rem lighten($input-border-color, 15%);
@@ -51,3 +51,29 @@ $btn-border-radius: 30px;
 $btn-border-radius-sm: 30px;
 
 $dropdown-link-active-bg: $blue;
+
+$card-border-width: 1px;
+$card-border-color: #EAEDF3;
+$card-spacer-x: 30px;
+$card-spacer-y: 20px;
+
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+$breadcrumb-item-padding: .5rem;
+
+$breadcrumb-margin-bottom: 30px;
+
+$breadcrumb-bg: transparent;
+$breadcrumb-divider-color: $gray;
+$breadcrumb-active-color: $gray;
+
+$breadcrumb-border-radius: 0;
+
+$list-group-item-padding-y: 0;
+$list-group-item-padding-x: 30px;
+
+$list-group-hover-bg: transparent;
+
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+$navbar-toggler-border-radius: 0;
