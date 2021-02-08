@@ -9,7 +9,7 @@ Firefly is a simple forum package for Laravel, created for ease of use and expan
 Install the package:
 
 ```bash
-composer require andreaselia/laravel-firefly
+composer require two-faces/laravel-firefly
 ```
 
 Publish files:
